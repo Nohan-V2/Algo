@@ -102,9 +102,9 @@ console.log(maxTroisNombres(3, 7, 5)); // Résultat attendu : 7
 
 function calculer(a, b, operation) {
   if (operation === addition) {
-    return addition(a, b, operation);
-  } else {
-    return multiplication(a, b, operation);
+    return addition(a, b);
+  } else if (operation === multiplication) {
+    return multiplication(a, b);
   }
 }
 function addition(x, y) {
